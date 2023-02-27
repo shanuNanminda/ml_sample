@@ -7,10 +7,7 @@ import 'homepage.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
    Tflite.close();
-  await Tflite.loadModel(
-    model: 'assets/model.tflite',
-    labels: 'assets/labels.txt',
-  );
+  
   runApp(const MyApp());
 }
 
