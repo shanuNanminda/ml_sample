@@ -21,8 +21,8 @@ class HomePage extends StatelessWidget {
                         
                         Navigator.pop(context);
                         await Tflite.loadModel(
-                          model: 'assets/unquant_model/model.tflite',
-                          labels: 'assets/unquant_model/labels.txt',
+                          model: 'assets/adarsh/model.tflite',
+                          labels: 'assets/adarsh/labels.txt',
                         );
                       },
                       child: Text('unquant')),
@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
                       onPressed: () async {
                         Navigator.pop(context);
                         await Tflite.loadModel(
-                          model: 'assets/quant_models/model.tflite',
-                          labels: 'assets/quant_models/labels.txt',
+                          model: 'assets/adarsh/model.tflite',
+                          labels: 'assets/adarsh/labels.txt',
                         );
                       },
                       child: Text('quant'))
